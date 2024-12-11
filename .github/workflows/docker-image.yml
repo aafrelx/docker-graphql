@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t todesritter/docker-graphql:0.0.2 .
+        docker build -t todesritter/docker-graphql:latest .
 
     - name: Push Docker image
       run: |
         docker push todesritter/docker-graphql:0.0.2
+        docker push todesritter/docker-graphql:latest
